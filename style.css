@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+ background-color: #333;   
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 425px;
+}
+
+#container {
+    width: 100%;
+    height: 100dvh;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#input-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#input-container > #input {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 12px;
+    text-align: right;
+    direction: ltr;
+    color: #fff;
+    background: none;
+    font-size: 2em;
+    caret-color: #005de8;
+}
+
+#input.removed {
+    top: -100% !important;
+    transition: 0.3s ease;
+}
+
+#input-container > #calculation {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: none;
+    padding: 12px;
+    font-size: 1.5em;
+    color: #999;
+    padding: 12px;
+    text-align: right;
+}
+
+#calculation.active {
+    top: 50% !important;
+    font-size: 2em !important;
+    color: #fff !important;
+    transition: 0.3s ease;
+}
+
+#buttons {
+    padding: 12px;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+#buttons > button {
+    padding: 16px;
+    font-size: 1.2em;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+
+button.action-btn {
+    color: #0b64ea !important;
+    font-size: 1.4em !important;
+}
+
+button.equals-to {
+    background-color: #005de8 !important;
+    color: #fff !important;
+    grid-row: span 2;
+    border-radius: 8px;
+}
