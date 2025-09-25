@@ -16,7 +16,7 @@ A sleek, responsive calculator with real-time calculation preview.
 
 ## 🚀 Usage
 
-- Click numbers and operators (+, -, ×, ÷) to perform calculations
+- [GO TO APP](https://calculator-app-peach-five.vercel.app/) - Click numbers and operators (+, -, ×, ÷) to perform calculations
 - See results in real-time as you type
 - **C** - Clear everything • **DEL** - Delete last character • **%** - Modulo operation
 
